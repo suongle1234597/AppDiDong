@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundItem"
+    android:layout_margin="20dp"
+    android:id="@+id/linearItem">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgTruyenAdmin"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/truyen"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitleTruyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_weight="0"
+            android:text="Sở Kiều Truyện"
+            android:textColor="@color/colorYellow"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAuthorTruyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Tác giả"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tvDateUpTruyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Ngày tải"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgViewEdit"
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/imgViewDelete"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+    </LinearLayout>l
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/truyen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorBackgroundItem"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Sở Kiều Truyện"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingTop="-5dp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textColor="@color/colorYellow"
+            android:text="Tác giả:" />
+
+        <TextView
+            android:id="@+id/tvCatagory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textColor="@color/colorYellow"
+            android:text="Thể loại:" />
+
+        <TextView
+            android:id="@+id/tvUploadDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textColor="@color/colorYellow"
+            android:text="Ngày up:" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="ĐỌC TRUYỆN"
+        android:background="@color/colorPurple"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btnLike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="#C52727"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Like"
+            android:visibility="visible"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Button
+            android:id="@+id/btnDislike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="#332929"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Dislike"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            />
+
+    <TextView
+        android:id="@+id/tvContentDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Nội dung chính"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBackgroundItem"
+        android:layout_margin="5dp"/>
+</LinearLayout>

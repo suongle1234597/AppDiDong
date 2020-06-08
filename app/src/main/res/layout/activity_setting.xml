@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorYellow"
+        android:textSize="18dp"
+        android:background="@color/colorBackgroundItem"
+        android:text="Nền" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sáng"
+            android:textColor="@color/colorWhite"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tối"
+            android:textColor="@color/colorWhite"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Kiểu chữ"
+        android:textColor="@color/colorYellow"
+        android:textSize="18dp"
+        android:background="@color/colorBackgroundItem"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_archivo_narrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Archivo narrow"
+            android:textColor="@color/colorWhite"/>
+        <RadioButton
+            android:id="@+id/rbtn_amita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amita"
+            android:textColor="@color/colorWhite"/>
+        <RadioButton
+            android:id="@+id/rbtn_aguafina_script"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aguafina_script"
+            android:textColor="@color/colorWhite"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorWhite"
+        android:fontFamily="@font/archivo_narrow"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Xin chào"
+        android:textColor="#000" />
+    <Button
+        android:id="@+id/btnChangeStyleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Áp dụng" />
+
+</LinearLayout>
